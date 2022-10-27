@@ -8,7 +8,7 @@ The Odin Project is one of those "What I wish I had when I was learning" resourc
 ####  To be able to create 2 of my own decent projects to build up my portfolio
 ####  To be able to have the skills to create or redesign any website I wanted
 ####  To complete JS path by 31/12/2022
- - FOUNDATION 
+ - <a href="./odin-recipes/index.html">[FOUNDATION] <a/>
  - INTERMEDIATE HTML AND 
  - JAVASCRIPT 
  - ADVANCED HTML AND CSS 
