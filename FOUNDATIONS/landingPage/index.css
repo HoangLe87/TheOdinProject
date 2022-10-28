@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    height: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 0 1;
+    font-family: "Cambria", "Cochin", Georgia, Times, 'Times New Roman', serif
+}
+
+header {
+    background-color: #1f2937;
+    padding: 0.5rem 100px 2rem 100px;
+}
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.nav1, .nav2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 40px;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.navbar {
+    flex: 2;
+}
+
+.title {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: bolder;
+}
+
+.title2 {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.headerImg {
+    width: 300px;
+    height: auto;
+    flex: 1 0 auto
+}
+
+.infoImg {
+    width: 150px;
+    height: 150px;
+    border: solid;
+    border-color: #1f2937;
+}
+
+button {
+    border-radius: 10%;
+    background-color: #3882F6;
+    color: white;
+    border-style: solid;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    border: #1f2937;
+}
+
+footer {
+    background-color: #1f2937;
+    color: #F9FAF8;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.cards {
+    flex: 1;
+    text-align: center;
+}
+
+p {
+    max-width: 150px;
+}
+
+.info {
+    margin: 30px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+.main2 {
+    background-color: #E5E7EB;
+    text-align: center;
+}
+
+.testimonial {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+    padding: 30px 100px 0 100px;
+}
+.author {
+    margin: 0;
+    text-align: end;
+    font-weight: bold;
+    padding: 0 100px 0 0;
+}
+
+.main3 {
+ display: flex;
+ padding: 20px 50px 20px 50px;
+ background-color: #3882F6;
+ margin: 50px;
+ color: #E5E7EB;
+ gap: 200px;
+ align-items: center;
+}
+
+.promoButton {
+    border-color: #E5E7EB;
+    border-style: solid;
+}
+
+.promoText {
+    margin-bottom: 10px;
+    font: bolder;
+    font-size: 30px;
+}
