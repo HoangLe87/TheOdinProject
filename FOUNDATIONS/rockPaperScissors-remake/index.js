@@ -139,7 +139,7 @@ const combat = async(playerPick, pcPick) => {
         scroll("end")
         summary.textContent = "You lost. Very sad."
         end.style.backgroundImage = "url('./images/lost.png')"
-        end.style.backgroundSize = "10%"
+        end.style.backgroundSize = "5%"
         end.style.backgroundRepeat = "no-repeat"
         end.style.backgroundPosition = "center"
         return
@@ -150,7 +150,7 @@ const combat = async(playerPick, pcPick) => {
         scroll("end")
         summary.textContent = "It's a draw. Noone won."
         end.style.backgroundImage = "url('./images/lost.png')"
-        end.style.backgroundSize = "10%"
+        end.style.backgroundSize = "5%"
         end.style.backgroundRepeat = "no-repeat"
         end.style.backgroundPosition = "center"
         return
@@ -161,7 +161,7 @@ const combat = async(playerPick, pcPick) => {
         scroll("end")
         summary.textContent = "You won, nice!"
         end.style.backgroundImage = "url('./images/win.png')"
-        end.style.backgroundSize = "10%"
+        end.style.backgroundSize = "5%"
         end.style.backgroundRepeat = "no-repeat"
         end.style.backgroundPosition = "center"
         return 
