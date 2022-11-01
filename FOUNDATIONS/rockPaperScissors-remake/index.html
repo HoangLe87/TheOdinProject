@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+    <title>The Duel</title>
+</head>
+<body>
+    <div class="header">
+       <img class="logo" src="./images/logo.jpg">
+       <span>The Duel</span>
+    </div>
+    <div>
+        <div class="main">
+            <h1 id="welcomeText"></h1>
+            <button id="playButton">Play</button>
+        </div>
+        <div class="fighterMenu" id="fighterMenu">
+            <h2>Choose your fighter</h2>
+            <ul class="fighterList">
+                <li>
+                    <div>Goku</div>
+                    <img class="fighterImg" id="goku" src="images/goku.png">
+                    <div>Goku is godly strong, but not very smart.</div></li>
+                <li>
+                    <div>Pikachu</div>
+                    <img class="fighterImg" id="pikachu" src="images/pikachu.png">
+                    <div>Pikachu is super agile, but too small.</div></li>
+                <li>
+                    <div>Naruto</div>
+                    <img class="fighterImg" id="naruto" src="images/naruto.png">
+                    <div>Naruto is a skillful ninja but rather reckless. </div></li></li>
+            </ul>
+        </div>
+        <div class="combat" id="combat">
+            <h2>Combat log</h2>
+            <div class="combatHeader">
+                <div class="playerCombat">
+                    <div>YOU</div>
+                    <img id="playerCombatImg" src="images/pikachu.png">
+                    <div>Health: <span id="playerCombatHealth">100</span></div>
+                </div>
+                <h1 id="vs">VS</h1>
+                <div class="pcCombat">
+                    <div>the power of AI</div>
+                    <img id="pcCombatImg" src="images/naruto.png">
+                    <div>Health: <span id="pcCombatHealth">100</span></div>
+                </div>
+            </div>
+            <ul id="combatLogList">
+            </ul>
+        </div>
+        <div class="end" id="end">
+            <h2 id="summary">You are victorious!</h2>
+            <button id="playAgain">Play again</button>
+        </div>
+    </div>
+    <div class="footer"> © Hoang Le 2022</div>
+</body>
+</html>

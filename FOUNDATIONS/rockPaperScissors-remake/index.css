@@ -1,0 +1,126 @@
+body {
+    box-sizing: border-box;
+    background: linear-gradient( black,rgb(27, 27, 83), black);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: monospace;
+    font-size: large;
+    scroll-behavior: smooth;
+}
+
+.header {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+
+} 
+.logo {
+    width: 80px;
+    height: auto;
+} 
+
+.footer {
+    font-size: small;
+    text-align: center;
+}
+
+.main> h1 {
+    margin-top: 30vh;
+}
+
+button {
+    padding: 10px 50px 10px 50px;
+    background: linear-gradient(45deg, blue, red);
+    color: aqua;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 10%;
+    border-style: solid;
+    box-shadow: 1px;
+    border-color: aqua;
+    margin-top: 10vh;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#playButton {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#vs.changed {
+    animation: fadeIn 1s infinite;
+}
+
+#playButton.changed {
+    visibility: visible;
+    opacity: 1;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from {scale: 2;};
+    to {scale: 1;}
+}
+
+.fighterMenu, .combat, .main, .end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80vh;
+}
+.fighterList, .combatHeader {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    gap: 30px
+}
+
+.fighterImg {
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-color: aqua;
+} 
+
+.fighterImg:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+ul.fighterList > li {
+    max-width: 200px;
+}
+
+.combatHeader {
+    display: flex;
+    text-align: center;
+}
+
+.playerCombatImg, img {
+    width: 300px;
+    height: 300px;
+}
+
+.combatHeader > h1 {
+    color: red
+}
+
+.playerCombat> div, .pcCombat> div {
+    margin: 10px 0 10px 0
+}
+
+.end {
+    padding: 100px 50px 100px 50px;
+    margin: 50vh 0 50vh 0
+}
