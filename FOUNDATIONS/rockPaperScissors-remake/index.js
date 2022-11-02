@@ -1,8 +1,8 @@
 //global here choices
 const choices = {
-   'goku' : { attack: 100, defence: 100, health: 250, image: "images/goku.png"},
-   'pikachu': {attack: 300, defence: 10, health: 90, image: "images/pikachu.png"},
-   'naruto': { attack: 170, defence: 30, health: 150, image: "images/naruto.png"},
+   'goku' : { attack: 100, defence: 10, health: 350, image: "images/goku.png"},
+   'pikachu': {attack: 350, defence: 10, health: 90, image: "images/pikachu.png"},
+   'naruto': { attack: 170, defence: 100, health: 150, image: "images/naruto.png"},
 }
 // global words to use for combat log
 const attacks = ["hit", "strike", "kick", "punch", "headbutt", "bash", "attack", "smite", "elbow", "knees"]
