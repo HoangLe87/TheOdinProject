@@ -1,6 +1,7 @@
 * {
     font-family: "VT323", monospace;
     box-sizing: border-box;
+    --mainColor: rgb(205, 205, 205);
 }
 
 .header, .footer {
@@ -24,7 +25,7 @@ body, .main {
     width: 80vh;
     border-style: solid;
     border-color: black;
-    background-color: grey;
+    background-color: var(--mainColor);
     box-shadow:  5px 5px black
 }
 
@@ -43,7 +44,7 @@ body, .main {
     height: auto;
 }
 
-#bannerOptions, #bannerText, #menuBar> ul, #content, #colorsMenu {
+#bannerOptions, #bannerText, #menuBar> ul, #content, #colorsMenu, #colorOption {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,11 +53,11 @@ body, .main {
 }
 
 #menuBar> ul {
-    margin: 0 0 0 15px;
+    margin: 0 0 30px 15px;
     gap: 15px;
 }
 
-#menuBar>ul> li:hover {
+#menuBar>ul> li:hover, #bannerOptions> button:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -70,14 +71,107 @@ body, .main {
     align-self: flex-start;
 }
 
-#content, #colorsMenu {
+#content {
     margin: 15px;
+}
+
+#colorsMenu, #colorOption {
+    justify-content: flex-start;
+    margin: 15px;
+    gap: 15px;
 }
 
 #drawArea {
     border-style: solid;
     border-color: black;
     background-color: white;
-    width: 640px;
-    height: 640px;
+    height: 50vh;
+    aspect-ratio: 1;
+    display: grid;
 }
+
+.div1, .div2 {
+    border-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+#optionsAction, #colorOption {
+    background-color: var(--mainColor);
+    overflow: hidden;
+    border: none;
+    text-align: center;
+    align-content: center;
+}
+
+#optionsAction:focus {
+    outline: none;
+}
+
+#one, #two, #three, #red, #blue, #black, #yellow, #green, #gray, #currentColor{
+    display: block;
+    width: 80px;
+    aspect-ratio: 1;
+    border: solid;
+    border-color: black;
+    background-color: var(--mainColor);
+    box-shadow:  5px 5px black;
+    border-width: thin;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#currentColor {
+    box-shadow: none
+}
+
+#currentColorContainer{
+    background-color: white;
+    padding: 2px;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+#red {
+    background-color: red;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#black {
+    background-color: black;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#green {
+    background-color: green;
+}
+
+#gray {
+    background-color: gray;
+}
+
+#red:active, #blue:active, #black:active, #yellow:active, #green:active, #gray:active {
+    box-shadow: 2px 2px 5px purple;
+    transform: scale(0.8);
+}
+
+#one.picked, #two.picked, #three.picked {
+    color: white;
+    box-shadow: 5px 5px grey;
+    border: solid;
+    background-color: black;
+    transform: scale(0.8);
+  }
+
+

@@ -9,12 +9,15 @@
     <title>EtchASketch</title>
 </head>
 <body>
-    <div class="header">Unleash your inner Picasso. Express your creativity!</div>
+    <div class="header">
+        <h1>Retro Sketch</h1>
+        <p>Unleash your inner Picasso. Express your creativity!</p>
+    </div>
     <div class="main">
             <div class="untitledBar">
                 <div id="bannerText">
                     <img src="./images/paintIcon.png"> 
-                    <span>untitled - Paint (Windows 1998)</span>
+                    <span>untitled - Paint</span>
                 </div>
                 <div id="bannerOptions">
                     <button>_</button>
@@ -34,14 +37,29 @@
             </div>
             <div id="content">
                 <div id="options">
-                    <div>Choose grid size (slidebar)</div>
-                    <div>Choose colors</div>
-                    <div>Erase</div>
-                    <div>Reset</div>
+                    <div>
+                        <p id="sliderValue">Choose to start:</p>
+                        <input type="range" min="1" max="40" value="20" id="myGrid">
+                    </div>
+                    <select id="optionsAction" multiple>
+                        <option value="1" id="one">draw</option>
+                        <option value="2" id="two">erase</option>
+                        <option value="3" id="three">clear</option>
+                    </select>
                 </div>
-                <div id="drawArea">drawArea</div>
+                <div id="drawArea"></div>
             </div>
-            <div id="colorsMenu">colorsMenu</div>
+            <div id="colorsMenu">
+                <div id="currentColorContainer"><div id="currentColor"></div></div>
+                <div id="colorOption">
+                    <div id="red"></div>
+                    <div id="blue"></div>
+                    <div id="black"></div>
+                    <div id="yellow"></div>
+                    <div id="green"></div>
+                    <div id="gray"></div>
+                </div>
+            </div>
         </div>
     <div class="footer">© Hoang Le 2022</div>
 </body>
