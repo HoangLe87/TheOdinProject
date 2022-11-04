@@ -175,3 +175,7 @@ body, .main {
   }
 
 
+img {
+    width: 15px;
+    aspect-ratio: 1;
+}

@@ -161,3 +161,8 @@ p {
     font: bolder;
     font-size: 30px;
 }
+
+img {
+    width: 15px;
+    height: auto;
+}
