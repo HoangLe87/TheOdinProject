@@ -1,6 +1,6 @@
 body {
     color: black;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: "VT323", monospace;
 }
 
 h1, h2 {
@@ -8,5 +8,5 @@ h1, h2 {
 }
 
 ul {
-font-size: small;
+font-size: normal;
 }
