@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <script src="./main.js" defer></script>
+  <title>Sign Up Form</title>
+</head>
+<body class="flex flex-col bg-black h-screen justify-center">
+  <main class="bg-white h-3/5 flex justify-between">
+    <div style="background-image: url('./img/bg.jpg')" class="h-auto w-2/5 bg-no-repeat bg-cover text-center flex flex-col justify-end text-white"><!--left-->
+        <div class="flex bg-gray-700/80 mb-80 justify-center">
+          <img src="./img/logo.png" class="h-24 w-auto p-2">
+          <h1 class="font-mono font-bold text-7xl self-center z-50">ANNA</h1>
+        </div>
+        <div> <a href="https://github.com/HoangLe87" class="text-xs">© Hoang Le 2022</a>
+        </div>
+    </div>
+    <div class="grow ml-8 flex flex-col justify-center gap-4 mr-16"><!--right-->
+        <div class="font-bold text-lg">
+          <p>Sing up to get the latest promotions and offers!</p>
+          <p>You <span class="italic">know</span> you want to</p>
+        </div>
+        <form method="post" name="myForm">
+          <div class="flex justify-between my-4">
+            <div>
+              <label for="first name">FIRST NAME</label><br>
+              <input type="text" name="first name" required class="peer border border-slate-300 rounded  invalid:border-red-700 valid:border-green-700">
+              <p class="mt-2 invisible peer-invalid:visible text-red-700 font-light text-sm">*Please enter a valid name</p>
+            </div> 
+            <div>
+              <label for="last name">LAST NAME</label><br>
+              <input type="text" name="last name" required class="peer border border-slate-300 rounded  invalid:border-red-700 valid:border-green-700">
+              <p class="mt-2 invisible peer-invalid:visible text-red-700 font-light text-sm">*Please enter a valid last name</p>
+            </div>
+          </div>
+          <div class="flex justify-between my-4">
+            <div>
+              <label for="email">EMAIL</label><br>
+              <input type="email" name="email" required min="5" class="peer border border-slate-300 rounded  invalid:border-red-700 valid:border-green-700">
+              <p class="mt-2 invisible peer-invalid:visible text-red-700 font-light text-sm">*Please enter a email</p>
+            </div>
+            <div>
+              <label for="number">NUMBER</label><br>
+              <input type="number" name="number" required min="5" class="peer border border-slate-300 rounded  invalid:border-red-700 valid:border-green-700">
+              <p class="mt-2 invisible peer-invalid:visible text-red-700 font-light text-sm">*Please enter a phone number</p>
+            </div>
+          </div>
+          <div class="flex justify-between my-4"> 
+            <div>
+              <label for="password">PASSWORD</label><br>
+              <input type="password" name="password1" required min="5" class="peer border border-slate-300 rounded  invalid:border-red-700 valid:border-green-700">
+              <p class="mt-2 invisible peer-invalid:visible text-red-700 font-light text-sm">*Please enter a password</p>
+            </div>
+            <div>
+              <label for="password">CONFIRM PASSWORD</label><br>
+              <input type="password" name="password2" required min="5" class="peer border border-slate-300 rounded  invalid:border-red-700 valid:border-green-700">
+              <p class="mt-2 invisible peer-invalid:visible text-red-700 font-light text-sm">*Please re-enter the password</p>       
+            </div>
+          </div>
+          <div class="my-4 border-t border-t-gray-300">
+            <button id="validate" class="bg-green-800 mt-2 hover:bg-green-900 hover:scale-110 text-white font-bold rounded py-2 px-4">Create Account</button>
+            <p>Already have an Account? <a href="/" class="text-green-700">Log in</a></p>
+          </div>
+        </form>
+    </div>
+  </main>
+</body>
+</html> 
