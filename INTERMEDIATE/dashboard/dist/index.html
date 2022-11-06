@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
-    <title>Document</title>
+    <title>My Dashboard</title>
 </head>
-<body class="h-screen border-stone-600 grid-cols-5 grid-rows-6 grid border">
+<body class="h-screen border-stone-600 grid-cols-5 grid-rows-6 grid border font-mono">
     <div class="border-stone-600 text-center grid grid-rows-6 bg-blue-500 text-white border col-span-1 row-span-6">
         <div class="border p-1 mt-5 row-span-1 self-start flex justify-start align-middle gap-4 text-base">
             <img src="img/dashboard.svg" width="30rem">Dashboard</div>
@@ -29,8 +29,14 @@
             </ul>
         </div>
     </div>
-    <div class="border-stone-600 border col-span-4 row-span-1 grid grid-rows-2 grid-cols-5">
-        <div class="border col-span-3">search bar</div>
+    <div class="border-stone-600 border col-span-4 mx-4 row-span-1 grid grid-rows-2 grid-cols-5 shadow-lg shadow-gray-400">
+        <div class="border col-span-3 content-center ml-2 my-5">
+            <form class="flex justify-start">
+                <label for="search"></label>
+                <img src="./img/search.svg" class="w-10 aspect-square">
+                <input id="search" type="text" placeholder=" search . . ." class="border-black border rounded-2xl p-2 w-80">
+            </form>
+        </div>
         <div class="border col-span-2 my-5 mr-6 grid grid-cols-3 align-middle">
             <img src="./img/bell.svg" class="w-10 col-span-1">
             <img src="./img/logo.jpg" class="w-10 aspect-square rounded-full col-span-1">
@@ -38,7 +44,8 @@
         </div>
         <div class="border col-span-2 grid grid-cols-3 gap-4 grid-rows-2">
             <div class="col-span-1"><img src="./img/logo.jpg" class="w-16 aspect-square rounded-full m-2"></div>
-            <div class="col-span-1 text-left font-bold m-2">
+            <div class="col-span-2 text-left font-bold m-2 p-2">
+                <div class="text-xs">Hi there,</div>
                 <div class="text-base">Hoang (@hoang)</div>
             </div>
         </div>
@@ -48,6 +55,36 @@
             <button class="rounded-3xl bg-blue-500 text-white px-8 py-2 w-32">Share</button>
         </div>
     </div>
-    <div class="border-stone-600 border col-span-4 row-span-5">main</div>
+    <div class="border-stone-600 border col-span-4 m-4 row-span-5 flex flex-col justify-start">
+        <div class="grid grid-cols-3">
+            <div class="col-span-2">My Projects</div>
+            <div class="col-span-1">Annoucements</div>
+        </div>
+        <div class="grid grid-cols-3 grid-rows-3">
+            <div class="grid grid-cols-2 grid-rows-3 col-span-2 row-span-3 border border-black">
+                <div>Super Cool Project</div>
+                <div>Less Cool Project</div>
+                <div>Impossible app</div>
+                <div>Easy app</div>
+                <div>Ad blocker app</div>
+                <div>Money Maker</div>
+            </div>
+            <div class="flex flex-col justify-between row-span-3 border border-black">
+                <div>
+                    <div>Site Maintenance</div>
+                    <div>Community share day</div>
+                    <div>Updated privacy</div>
+                </div>
+                <div>Trending
+                    <div class="grid grid-rows-4">
+                        <p>dog</p>
+                        <p>cat</p>
+                        <p>alien</p>
+                        <p>pengiun</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
