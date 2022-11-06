@@ -8,27 +8,46 @@
     <title>Document</title>
 </head>
 <body class="h-screen border-stone-600 grid-cols-5 grid-rows-6 grid border">
-    <div class="border-stone-600 text-center grid grid-rows-6 bg-blue-400 text-white border col-span-1 row-span-6">
-        <div class="border p-5 row-span-1 self-center">Dashboard</div>
-        <div class="border row-span-2">
+    <div class="border-stone-600 text-center grid grid-rows-6 bg-blue-500 text-white border col-span-1 row-span-6">
+        <div class="border p-1 mt-5 row-span-1 self-start flex justify-start align-middle gap-4 text-base">
+            <img src="img/dashboard.svg" width="30rem">Dashboard</div>
+        <div class="border row-span-2 pl-2 text-sm">
             <ul>
-                <li class="p-2 flex justify-center gap-4"><img src="img/home.svg" width="20rem">Home</li>
-                <li class="p-2 flex justify-center gap-4"><img src="img/account-group.svg" width="20rem">Profile</li>
-                <li class="p-2">Messages</li>
-                <li class="p-2">History</li>
-                <li class="p-2">Tasks</li>
-                <li class="p-2">Communities</li>
+                <li class="p-2 flex justify-start gap-4"><img src="img/home.svg" width="20rem">Home</li>
+                <li class="p-2 flex justify-start gap-4"><img src="img/account-group.svg" width="20rem">Profile</li>
+                <li class="p-2 flex justify-start gap-4"><img src="./img/messages.svg" width="20rem">Messages</li>
+                <li class="p-2 flex justify-start gap-4"><img src="./img/bulb.svg" width="20rem">History</li>
+                <li class="p-2 flex justify-start gap-4"><img src="./img/tasks.svg" width="20rem">Tasks</li>
+                <li class="p-2 flex justify-start gap-4"><img src="./img/account-group.svg" width="20rem">Communities</li>
             </ul>
         </div>
-        <div class="border">
+        <div class="border pl-2 text-sm">
             <ul>
-                <li class="p-2">Settings</li>
-                <li class="p-2">Support</li>
-                <li class="p-2">Privacy</li>
+                <li class="p-2 flex justify-start gap-4"><img src="./img/monitor.svg" width="20rem">Settings</li>
+                <li class="p-2 flex justify-start gap-4"><img src="./img/support.svg" width="20rem">Support</li>
+                <li class="p-2 flex justify-start gap-4"><img src="./img/key.svg" width="20rem">Privacy</li>
             </ul>
         </div>
     </div>
-    <div class="border-stone-600 border col-span-4 row-span-1">header</div>
+    <div class="border-stone-600 border col-span-4 row-span-1 grid grid-rows-2 grid-cols-5">
+        <div class="border col-span-3">search bar</div>
+        <div class="border col-span-2 my-5 mr-6 grid grid-cols-3 align-middle">
+            <img src="./img/bell.svg" class="w-10 col-span-1">
+            <img src="./img/logo.jpg" class="w-10 aspect-square rounded-full col-span-1">
+            <p class=" self-center text-center col-span-1">Hoang</p>
+        </div>
+        <div class="border col-span-2 grid grid-cols-3 gap-4 grid-rows-2">
+            <div class="col-span-1"><img src="./img/logo.jpg" class="w-16 aspect-square rounded-full m-2"></div>
+            <div class="col-span-1 text-left font-bold m-2">
+                <div class="text-base">Hoang (@hoang)</div>
+            </div>
+        </div>
+        <div class="border col-start-3 col-span-3 flex justify-end m-5 gap-6 text-sm">
+            <button class="rounded-3xl bg-blue-500 text-white px-8 py-2 w-32">New</button>
+            <button class="rounded-3xl bg-blue-500 text-white px-8 py-2 w-32">Upload</button>
+            <button class="rounded-3xl bg-blue-500 text-white px-8 py-2 w-32">Share</button>
+        </div>
+    </div>
     <div class="border-stone-600 border col-span-4 row-span-5">main</div>
 </body>
 </html>
