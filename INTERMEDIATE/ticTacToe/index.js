@@ -29,12 +29,20 @@ const game = ((player1, player2, gameBoard) => {
     }
 })
 
+const display = (gameBoard) => {
+    let i=0
+    gameBoard.forEach(element => {
+        document.getElementById(i).textContent=element
+        i++
+    });
+}
 
 const ticTacToe = (() => {
     let gameBoard = Array(9)
     let player1 = Player('player1', 'x', gameBoard)
     let player2 = Player('player2', 'o', gameBoard)
     game(player1,player2, gameBoard)
+    display(gameBoard)
 })()
 
 
