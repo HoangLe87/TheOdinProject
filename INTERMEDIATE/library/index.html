@@ -9,47 +9,51 @@
     <title>My Library</title>
 </head>
 <body>
-    <div>
-        <button id="openAddBookBox">Form</button>
+    <div class="header"> <!--header-->
+        <div><button id="openAddBookBoxButton"><p id="addSign">+</p></button></div>
+        <h1>My Library</h1>
     </div>
-    <div>
+    <div><!--Form-->
         <div class="scaled" id="addBookScreen">
             <form>
-                <div id="closeAddBook">x</div>
-                <div id="addBookBox">
-                    <div>
-                        <label for="'title">Title</label>
-                        <input type="text" name='title' placeholder="">
-                    </div>
-                    <div>
-                        <label for="'author">Author</label>
-                        <input type="text" name='author' placeholder="">
-                    </div>
-                    <div>
-                        <label for="'date">Year</label>
-                        <input type="date" name='date' placeholder="">
-                    </div>
-                    <div>
-                        <label for="rating">Rating</label>
-                        <select id="rating" class="text-center">
-                            <option value="good" id="good">Good</option>
-                            <option value="bad" id="bad">Bad</option>
-                            <option value="average" id="average">Average</option>
-                            <option value="" selected>Select a rating</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="read">Read</label>
-                        <input id="read" type="checkbox" name="read" value="read">
-                        </select>
-                    </div>
+                <div id="closeAddBook">x
                 </div>
-                <div id="addBookScreenButton">
-                    <button id="add">Add</button>
-                </div>
-                </div>    
+                <div>
+                    <div id="addBookBox">
+                        <div class="formFields">
+                            <label for="'title">Title</label>
+                            <input type="text" name='title' id="inputTitle" maxlength="20" minlength="1">
+                        </div>
+                        <div class="formFields">
+                                <label for="'author">Author</label>
+                                <input type="text" name='author' id="inputAuthor" maxlength="20" minlength="1">
+                        </div>
+                        <div class="formFields">
+                                <label for="genre">Genre</label>
+                                <input type="text" name='genre' id="inputGenre" maxlength="20" minlength="1">
+                        </div>
+                        <div class="formFields">
+                                <label for="inputRating">Rating</label>
+                                <select id="inputRating" class="text-center">
+                                    <option value="good" id="good" selected>Good</option>
+                                    <option value="bad" id="bad">Bad</option>
+                                    <option value="average" id="average">Average</option>
+                                </select>
+                        </div>
+                        <div class="formFields">
+                                <label for="inputRead">Read</label>
+                                <input id="inputRead" type="checkbox" name="read" value="true" checked>
+                        </div>
+                        <div class="formFields" id="addBookScreenButton">
+                            <button id="add">Add</button>
+                        </div>
+                    </div>
+                </div>   
             </form>
         </div>
     </div>
+    <main id="main">
+    </main>
+    <div class="footer">© Hoang Le 2022</div>
 </body>
 </html>

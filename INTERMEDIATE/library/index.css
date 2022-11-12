@@ -5,13 +5,47 @@ body {
     --buttonColor: #6366f1;
     --buttonColorHover: #4338ca;
     --shadowColor: #52525b;
+    --backgroundColor1: #B25068;
+    --backgroundColor2: #71717a;
+    --backgroundColor3: #0f0711;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: -1;
+    color: white
 }
+
+/* prage layout - header, footer */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    background-color: var(--shadowColor);
+    align-items: center;
+    color:white;
+    box-shadow: 2px 2px black
+}
+
+.header>h1 {
+    grid-column-start: 3;
+    text-align: center;
+
+}
+
+.footer {
+    background-color: var(--shadowColor);
+    text-align: center;
+    color: white
+}
+
 /* buttons */
 button {
     padding: 1rem 2rem;
     border-radius: 15px;
     background-color: var(--buttonColor);
     color: white;
+    margin: 10px;
+    border: 1px solid white;
 } 
 
 button:hover {
@@ -22,8 +56,22 @@ button:hover {
 #addBookScreenButton {
     display: flex;
     justify-content: center;
-    margin: 1rem;
+    margin:0
 }
+
+#openAddBookBoxButton {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#openAddBookBoxButton>p {
+    margin: 0;
+}
+
+.rotate {
+    rotate: 45deg;
+}
+
 /* pop up screen */
 
 #addBookScreen {
@@ -35,11 +83,12 @@ button:hover {
     aspect-ratio: 1;
     padding: 0 1rem 1rem 1rem;
     border-radius: 15px;
-    box-shadow: 2px 2px #52525b;
+    box-shadow: 2px 2px var(--shadowColor);
     border-style: solid;
     border-width: 1px;
     border-color: black;
     font-size: large;
+    background-color: var( --backgroundColor3)
 }
 
 .scaled {
@@ -51,19 +100,82 @@ button:hover {
     gap: 0.5rem;
 }
 
-#addBookBox>div {
+.formFields {
     display: flex;
     justify-content: space-between;
-    margin-top: 0.5rem;
+    margin: 0.5rem
 }
 
 #closeAddBook {
     text-align: right;
     font-weight: bold;
     font-size: large;
-    margin-top: 0.5rem;
+    margin: 0.5rem 0 0.5rem 0;
 }
 
 #closeAddBook:hover {
     cursor: pointer;
+}
+
+/* cards */
+main {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    overflow: auto;
+    margin: 0
+}
+
+.card {
+    width: 250px;
+    aspect-ratio: 1;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 4px 4px black;
+    font-size: medium;
+    z-index: 1;
+    background-color: var(--shadowColor);
+    margin: 1rem;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    padding: 0.5rem;
+    border-left: 20px solid;
+    text-align: center;
+    overflow: auto;
+}
+
+
+/* card specific attributes */
+.title {
+    font-size: larger;
+    font-weight: bold;
+}
+.red {
+    border-color: red;
+}
+
+.green {
+    border-color: green;
+}
+
+.toggle, .deleteButton {
+    background-color: #6366f1;
+    margin: 0 2.5rem 0 2.5rem;
+    border-radius: 15px;
+    padding: 2px;
+    height: 1rem;
+}
+
+.toggle:hover, .deleteButton:hover {
+    cursor: pointer;
+}
+
+.toggle:active, .deleteButton:active {
+    transform: scale(0.8);
+}
+
+h1 {
+    overflow-wrap: break-word;
 }
