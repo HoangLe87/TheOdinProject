@@ -2,7 +2,7 @@ import "./style.scss";
 import header from './header'
 import footer from './footer'
 import {mainMenu, closeForm} from './mainMenu'
-import {mainCards, displayCards, tasks} from './mainCards'
+import {mainCards, displayCards, tasks, displySelection} from './mainCards'
 import factoryToDo from './factoryToDo'
 
 
@@ -20,12 +20,11 @@ let projectSelectInput = document.getElementById('projectSelectInput')
 
 projectSelectInput.addEventListener('change', ()=>{
     if (projectSelectInput.value.toLowerCase()==='all') {
-        console.log(tasks)
-        displayCards(tasks)
+        displayCards()
     }
     else {
         let filteredTasks = tasks.filter(i=>i.project.toLowerCase()===projectSelectInput.value.toLowerCase())
-        displayCards(filteredTasks)
+        displySelection(filteredTasks)
     }
 })
 
@@ -48,7 +47,7 @@ const addTaskForm = () => {
         let notes = document.createElement('input')
         notes.placeholder='notes'
         let done = document.createElement('input')
-        done.placeholder='true/false'
+        done.placeholder='yes/no'
 
         let add = document.createElement('button')
         add.textContent='add'
