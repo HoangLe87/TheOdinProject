@@ -91,6 +91,8 @@ div1Title.appendChild(select)
 
 
 
+
+
 // append buttons and title to div1
 div1.appendChild(div1Title)
 div1.appendChild(div1Buttons)
