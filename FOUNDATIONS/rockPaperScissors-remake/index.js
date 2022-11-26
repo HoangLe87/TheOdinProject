@@ -5,7 +5,7 @@ const choices = {
    'naruto': { attack: 110, defence: 80, health: 150, image: "images/naruto.png"},
 }
 // global words to use for combat log
-const attacks = ["hit", "strike", "kick", "punch", "headbutt", "bash", "attack", "smite", "elbow", "knee"]
+const attacks = ["hit", "strike", "kick", "punch", "headbutt", "bash", "attack", "smite", "elbow", "knee", "bite"]
 
 // initial typed text at page load
 const initWelcomeText = () => {
@@ -123,7 +123,7 @@ const combat = async(playerPick, pcPick) => {
     let end = document.getElementById("end")
     await sleep(3000)
     while (pcRemainingHealth>0 && playerRemainingHealth>0) {
-        await sleep(1000)
+        await sleep(2000)
         let playerDmg = Math.floor(Math.random()*player.attack) - Math.floor(Math.random()*pc.defence)
         let pcDmg = Math.floor(Math.random()*pc.attack) - Math.floor(Math.random()*player.defence)
         pcRemainingHealth = pcRemainingHealth - playerDmg
@@ -135,7 +135,7 @@ const combat = async(playerPick, pcPick) => {
     }
     if (pcRemainingHealth>=0 && playerRemainingHealth<=0) {
         combatUpdateText(`You died`)
-        await sleep(2000)
+        await sleep(5000)
         scroll("end")
         summary.textContent = "You lost. Very sad."
         end.style.backgroundImage = "url('./images/lost.png')"
@@ -146,7 +146,7 @@ const combat = async(playerPick, pcPick) => {
     }
     if (pcRemainingHealth<=0 && playerRemainingHealth<=0) {
         combatUpdateText(`You both died`)
-        await sleep(2000)
+        await sleep(5000)
         scroll("end")
         summary.textContent = "It's a draw. Noone won."
         end.style.backgroundImage = "url('./images/lost.png')"
@@ -157,7 +157,7 @@ const combat = async(playerPick, pcPick) => {
     }
     if (pcRemainingHealth<=0 && playerRemainingHealth>=0) {
         combatUpdateText(`You won`)
-        await sleep(2000)
+        await sleep(5000)
         scroll("end")
         summary.textContent = "You won, nice!"
         end.style.backgroundImage = "url('./images/win.png')"
