@@ -129,10 +129,10 @@ const combat = async(playerPick, pcPick) => {
         pcRemainingHealth = pcRemainingHealth - playerDmg
         playerRemainingHealth = playerRemainingHealth - pcDmg
         combatUpdateText(`You ${attacks[Math.floor(Math.random()*attacks.length)]} ${pcPick.charAt(0).toUpperCase()+pcPick.slice(1)} for ${playerDmg} damage.`)
+        document.getElementById("pcCombatHealth").textContent=pcRemainingHealth
+        await sleep(2000)
         combatUpdateText(`${pcPick.charAt(0).toUpperCase()+pcPick.slice(1)} ${attacks[Math.floor(Math.random()*attacks.length)]}s you back for ${pcDmg} damage.`)
         document.getElementById("playerCombatHealth").textContent=playerRemainingHealth
-        await sleep(2000)
-        document.getElementById("pcCombatHealth").textContent=pcRemainingHealth
     }
     if (pcRemainingHealth>=0 && playerRemainingHealth<=0) {
         combatUpdateText(`You died`)
